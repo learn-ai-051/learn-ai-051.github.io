@@ -1,1 +1,328 @@
-Learn AI
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Build practical English skills with AI-powered learning, speaking, reading and vocabulary practice.">
+    <title>English Tutor: Learn with AI</title>
+    <style>
+        :root {
+            --bg: #f5f7ff;
+            --ink: #18213d;
+            --muted: #606b86;
+            --p: #6157e8;
+            --line: #e6e9f5
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font: 16px/1.65 system-ui, sans-serif
+        }
+
+        .wrap {
+            max-width: 1080px;
+            margin: auto;
+            padding: 0 24px
+        }
+
+        a {
+            color: var(--p);
+            text-decoration: none
+        }
+
+        .nav,
+        footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
+            padding: 24px 0
+        }
+
+        .brand {
+            font-weight: 800;
+            color: var(--ink)
+        }
+
+        .nav nav {
+            display: flex;
+            gap: 20px
+        }
+
+        .hero {
+            padding: 65px 0;
+            background: radial-gradient(circle at 80% 15%, #d8fbf4, transparent 30%), radial-gradient(circle at 10% 10%, #e3dfff, transparent 35%)
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 40px;
+            align-items: center
+        }
+
+        .tag {
+            background: #e8e6ff;
+            color: #4e45c6;
+            border-radius: 99px;
+            padding: 7px 12px;
+            font-size: 12px;
+            font-weight: 800
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 66px);
+            line-height: 1.05;
+            letter-spacing: -.05em;
+            margin: 20px 0
+        }
+
+        .hero p,
+        .lead {
+            color: var(--muted);
+            font-size: 18px
+        }
+
+        .cta {
+            display: inline-block;
+            background: var(--p);
+            color: white;
+            padding: 13px 20px;
+            border-radius: 12px;
+            font-weight: 750
+        }
+
+        .art {
+            background: linear-gradient(145deg, #7065f4, #25c5bd);
+            padding: 28px;
+            border-radius: 30px;
+            min-height: 310px;
+            display: grid;
+            place-items: center
+        }
+
+        .dashboard {
+            background: white;
+            border-radius: 22px;
+            padding: 25px;
+            width: 100%;
+            max-width: 340px;
+            box-shadow: 0 15px 40px #1c286033
+        }
+
+        .dashboard h3 {
+            margin: 8px 0
+        }
+
+        .bar {
+            height: 9px;
+            background: #e8eafa;
+            border-radius: 9px;
+            margin: 14px 0
+        }
+
+        .bar span {
+            display: block;
+            width: 68%;
+            height: 100%;
+            background: linear-gradient(90deg, #675cf0, #25c5bd);
+            border-radius: 9px
+        }
+
+        .item {
+            padding: 10px 0;
+            border-top: 1px solid var(--line);
+            font-weight: 650
+        }
+
+        .section {
+            padding: 65px 0
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: clamp(28px, 4vw, 40px);
+            letter-spacing: -.04em
+        }
+
+        .lead {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 32px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px
+        }
+
+        .feature {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 23px
+        }
+
+        .feature .icon {
+            font-size: 30px
+        }
+
+        .feature h3 {
+            margin: 10px 0 5px
+        }
+
+        .feature p {
+            margin: 0;
+            color: var(--muted)
+        }
+
+        .band {
+            background: #20264a;
+            color: white;
+            text-align: center;
+            padding: 38px;
+            border-radius: 25px
+        }
+
+        .band p {
+            color: #d5d9f0
+        }
+
+        .notice,
+        footer {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        footer {
+            border-top: 1px solid var(--line)
+        }
+
+        @media(max-width:760px) {
+
+            .hero-grid,
+            .grid {
+                grid-template-columns: 1fr
+            }
+
+            .hero {
+                padding: 45px 0
+            }
+
+            .nav nav {
+                gap: 12px
+            }
+
+            .art {
+                min-height: 260px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="wrap nav"><a class="brand" href="index.html">🎓 English Tutor AI</a>
+        <nav><a href="#features">Features</a><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div><span class="tag">YOUR PERSONAL AI ENGLISH COMPANION</span>
+                    <h1>Make English practice part of your everyday life.</h1>
+                    <p>Build practical English skills with vocabulary, speaking, reading, structured lessons,
+                        translation, interview preparation, IELTS speaking practice and AI chat—all in one learning
+                        experience.</p><a class="cta" href="#features">Explore learning features →</a>
+                    <p class="notice">Learn at your own pace and practice whenever it fits your schedule.</p>
+                </div>
+                <div class="art">
+                    <div class="dashboard">
+                        <div style="font-size:38px">📚 ✨</div>
+                        <h3>Your learning path</h3>
+                        <p style="color:#606b86">Keep moving forward, one practice session at a time.</p>
+                        <div class="bar"><span></span></div>
+                        <div class="item">🗣️ Speaking practice</div>
+                        <div class="item">🧠 Vocabulary review</div>
+                        <div class="item">🤖 Chat with AI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section wrap" id="features">
+            <h2>Everything you need to keep learning</h2>
+            <p class="lead">Mix and match activities that help you use English more often, understand words in context
+                and build a steady study routine.</p>
+            <div class="grid">
+                <article class="feature">
+                    <div class="icon">🗺️</div>
+                    <h3>Learning path</h3>
+                    <p>Stay organized, follow activities and continue where you left off.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">📖</div>
+                    <h3>Vocabulary building</h3>
+                    <p>Discover useful words for everyday conversations, reading and lessons.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">🎙️</div>
+                    <h3>Speaking practice</h3>
+                    <p>Answer prompts and get more comfortable expressing ideas in English.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">💼</div>
+                    <h3>Job interviews</h3>
+                    <p>Rehearse common interview questions and structure your answers.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">🏆</div>
+                    <h3>IELTS speaking</h3>
+                    <p>Practice IELTS-related topics and communicate ideas more clearly.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">📚</div>
+                    <h3>Reading passages</h3>
+                    <p>Read available passages and learn vocabulary through context.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">🌐</div>
+                    <h3>Translation</h3>
+                    <p>Translate supported text to help understand words and sentences.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">📝</div>
+                    <h3>Structured lessons</h3>
+                    <p>Study at your own pace and revisit activities when needed.</p>
+                </article>
+                <article class="feature">
+                    <div class="icon">🤖</div>
+                    <h3>AI conversations</h3>
+                    <p>Ask questions, explore topics and practice conversational responses.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section wrap">
+            <div class="band">
+                <h2>Small practice. Steady progress.</h2>
+                <p>Use English Tutor: Learn with AI for everyday communication, work, travel or personal growth.</p>
+            </div>
+            <p class="notice">AI-generated responses may contain mistakes or inaccurate information. Independently
+                review important information and use the App as a learning aid, not a substitute for qualified
+                professional instruction. English Tutor: Learn with AI is not affiliated with, approved by, or endorsed
+                by IELTS or its associated organizations.</p>
+        </section>
+    </main>
+    <footer class="wrap"><span>© 2026 English Tutor: Learn with AI</span><span><a href="privacy-policy.html">Privacy
+                Policy</a> · <a href="terms.html">Terms of Use</a> · <a
+                href="mailto:glamsie1984@googlemail.com">Contact</a></span></footer>
+</body>
+
+</html>
